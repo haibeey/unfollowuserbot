@@ -41,6 +41,7 @@ class main(object):
         return followed_user
 
 if __name__=="__main__":
+    User.init_database_tables()
     m=main(api)
     me=api.me()
     m.add_user_local(me.id)
